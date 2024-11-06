@@ -1,24 +1,10 @@
 ![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)
 
-nextjs-application-template is a sample Next.js 14 application that illustrates:
+Digits is an application that allows users to:
 
-- A standard directory layout using 'src/' as recommended in the [Next.js Project Structure](https://nextjs.org/docs/getting-started/project-structure) guide.
-- [Bootstrap 5 React](https://react-bootstrap.github.io/) for user interface.
-- [React Hook Form](https://www.react-hook-form.com/) for form development.
-- Authorization, authentication, and registration using [NextAuth.js](https://next-auth.js.org/).
-- Initialization of users and data from a settings file.
-- Alerts regarding success or failure of DB updates using [Sweet Alert](https://sweetalert.js.org/).
-- Quality assurance using [ESLint](http://eslint.org) with packages to partially enforce the [Next.js ESLint rules](https://nextjs.org/docs/app/building-your-application/configuring/eslint) and the [AirBnB Javascript Style Guide](https://github.com/airbnb/javascript).
-
-The goal of this template is to help you get quickly started doing Next.js development by providing a reasonable directory structure for development and deployment, a set of common extensions to the core framework, and boilerplate code to implement basic page display, navigation, forms, roles, and database manipulation.
-
-To keep this codebase simple and small, some important capabilities are intentionally excluded from this template:
-
-- Unit Testing
-- Security
-- Deployment
-
-Examples of the these capabilities will be provided elsewhere.
+- Register an account
+- Add and list a set of contacts
+- Add a set of timestamped notes regarding their interactions with each contact.
 
 ## Installation
 
@@ -242,7 +228,9 @@ By default, each user only sees the Stuff that they have created. However, the s
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)
+<img src="doc/landing-page.png">
+
+You will see the landing page that provides a brief introduction to the capabilities of Digits.
 
 The next step is to use the Login menu to either Login to an existing account or register a new account.
 
@@ -250,53 +238,54 @@ The next step is to use the Login menu to either Login to an existing account or
 
 Clicking on the Login link, then on the Sign In menu item displays this page:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/signin-page.png)
+<img src="doc/signin-page.png">
 
 #### Register page
 
 Alternatively, clicking on the Login link, then on the Sign Up menu item displays this page:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/register-page.png)
+<img src="doc/signup-page.png">
 
 #### Landing (after Login) page, non-Admin user
 
-Once you log in (either to an existing account or by creating a new one), the navbar changes as follows:
+Once you log in (either to an existing account or by creating a new one), the system takes you to your home page.
+It is just like the landing page, but the NavBar contains links to add new contacts and list contacts:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-after-login-page.png)
+<img src="doc/user-home-page.png">
 
-You can now add new Stuff documents, and list the Stuff you have created. Note you cannot see any Stuff created by other users.
+You can now add new contacts, and list the contacts you have created. Note you cannot see any contacts created by other users.
 
-#### Add Stuff page
+#### Add Contact page
 
-After logging in, here is the page that allows you to add new Stuff:
+After logging in, here is the page that allows you to add new contacts:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/add-stuff-page.png)
+<img src="doc/add-contact-page.png">
 
-#### List Stuff page
+#### List Contacts page
 
-After logging in, here is the page that allows you to list all the Stuff you have created:
+After logging in, here is the page that allows you to list all the contacts you have created:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/list-stuff-page.png)
+<img src="doc/list-contacts-page.png">
 
-You click the "Edit" link to go to the Edit Stuff page, shown next.
+You click the "Edit" link to go to the Edit Contact page, shown next.
 
-#### Edit Stuff page
+#### Edit Contact page
 
 After clicking on the "Edit" link associated with an item, this page displays that allows you to change and save it:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/edit-stuff-page.png)
+<img src="doc/edit-contact-page.png">
 
 #### Landing (after Login), Admin user
 
-You can define an "admin" user in the settings.json file. This user, after logging in, gets a special entry in the navbar:
+You can define an "admin" user in the settings.json file. This user, after logging in, gets a special "Admin" entry in the navbar:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/admin-landing-page.png)
+<img src="doc/admin-landing-page.png">
 
 #### Admin page (list all users stuff)
 
-To provide a simple example of a "super power" for Admin users, the Admin page lists all of the Stuff by all of the users:
+When a user has the Admin role, they get access to a special NavBar link that retrieves a page listing all Contacts associated with all users:
 
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/admin-list-stuff-page.png)
+<img src="doc/admin-list-contacts.png">
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
