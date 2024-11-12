@@ -1,4 +1,5 @@
-![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)
+<!--![](https://github.com/ics-software-engineering/nextjs-application-template/raw/main/doc/landing-page.png)-->
+<img src="doc/landing-page.png">
 
 Digits is an application that allows users to:
 
@@ -218,12 +219,13 @@ app/
 
 ```
 
-### Application functionality
+<!--### Application functionality
 
 The application implements a simple CRUD application for managing "Stuff", which is a PostgreSQL table consisting of a name (String), a quantity (Number), a condition (one of 'excellent', 'good', 'fair', or 'poor') and an owner.
 
-By default, each user only sees the Stuff that they have created. However, the settings file enables you to define default accounts. If you define a user with the role "admin", then that user gets access to a special page which lists all the Stuff defined by all users.
+By default, each user only sees the Stuff that they have created. However, the settings file enables you to define default accounts. If you define a user with the role "admin", then that user gets access to a special page which lists all the Stuff defined by all users.-->
 
+### User Interface Walkthrough
 #### Landing page
 
 When you retrieve the app at http://localhost:3000, this is what should be displayed:
@@ -289,7 +291,7 @@ When a user has the Admin role, they get access to a special NavBar link that re
 
 Note that non-admin users cannot get to this page, even if they type in the URL by hand.
 
-### Tables
+<!--### Tables
 
 The application implements two tables "Stuff" and "User". Each Stuff row has the following columns: id, name, quantity, condition, and owner. The User table has the following columns: id, email, password (hashed using bcrypt), role.
 
@@ -360,7 +362,7 @@ The application includes a [.eslintrc.json](https://github.com/ics-software-engi
 
 ESLint should run without generating any errors.
 
-It's significantly easier to do development with ESLint integrated directly into your IDE (such as VSCode).
+It's significantly easier to do development with ESLint integrated directly into your IDE (such as VSCode).-->
 
 <!--
 ## Screencasts
